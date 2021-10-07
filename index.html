@@ -7,12 +7,28 @@
     <title>Webpag | Homescreen</title>
   </head>
   <body>
-    <header>
+    <nav>
       <ul>
-        <li><a href="#" class="selected">home</a></li>
+        <li class="selected"><a href="#">Home</a></li>
         <li><a href="sites/nuevos.html">Nuevos</a></li>
-        <li><a href="sites/cat/categorias.html">Categorias</a></li>
+        <li class="dropdown">
+          <a href="sites/cat/categorias.html" class="dropbtn">Categorias</a>
+          <div class="dropdown-content">
+            <a href="#">Acción</a>
+            <a href="#">Drama</a>
+            <a href="#">Misterio</a>
+          </div>
+        </li>
+        <li>
+          <img src="logo.png" alt="">
+        </li>
+        <li class="searchbox">
+          <input type="text" placeholder="¡Busca aquí!">
+          <button type="button">Buscar</button>
+        </li>
       </ul>
-    </header>
+    </nav>
+    <main>
+    </main>
   </body>
 </html>
