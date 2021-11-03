@@ -1,0 +1,67 @@
+/**/
+#id acor:only-child{
+  z-index: -1;
+}
+/**/
+table,th,td {
+  border-collapse: collapse;
+}
+table {
+  margin: 5% auto 5% auto;
+  text-align: center;
+  font-family: calibri;
+  font-size: 8px;
+}
+.container {
+  position: relative;
+  width: 100px;
+  height: 50px;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100px;
+  height: 50px;
+  transition: .2s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+.container:hover {
+  animation-name: selected;
+  animation-duration: 2s;
+  animation: selected 1.0 forwards;
+}
+.container:hover .image {
+  opacity: 0.3;
+  animation-name: selected;
+  animation-duration: 2s;
+  animation: selected 1.0 forwards;
+}
+.container:hover .middle {
+  opacity: 1;
+}
+.text {
+  color: black;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 16px 32px;
+}
+@keyframes selected {
+  from {
+      width: 100px;
+      height: 50px;
+    }
+  to {
+    width: 150px;
+    height: 75px;
+   }
+  }
+}

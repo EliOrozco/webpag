@@ -2,17 +2,54 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../../css/master.css">
-    <script src="../../js/master.js"></script>
-    <title>Webpag | Homescreen</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+    <link rel="stylesheet" href="../sources/master.css">
+    <script src="../../sources/master.js"></script>
+    <title>Webpag | Categorias</title>
   </head>
   <body>
-    <header>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Nuevos</a></li>
-        <li><a href="#" class="selected">Categorias</a></li>
-      </ul>
-    </header>
+    <!-- NAVEGACIÓN -->
+    <nav>
+      <div class="w3-bar w3-flat-wisteria w3-large">
+        <a href="#" class="w3-bar-item w3-button w3-hover-teal">Inicio</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-teal">Nuevos</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-teal">Categorias</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-teal">Link 3</a>
+        <input type="text" class="w3-bar-item w3-input w3-right w3-hide-small" placeholder="Busca por nombre, autor...">
+        <a href="#" class="w3-bar-item w3-button w3-flat-amethyst w3-right w3-hide-small w3-hover-teal">Buscar</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="colapsarMenu()">&#9776;</a>
+      </div>
+      <!-- NAVEGACIÓN COMPACTA-->
+      <div id="demo" class="w3-bar-block w3-flat-wisteria w3-hide w3-hide-large w3-hide-medium">
+        <a href="#" class="w3-bar-item w3-button w3-hover-teal">Nuevos</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-teal">Categorias</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-teal">Link 3</a>
+        <input type="text" class="w3-bar-item w3-input" placeholder="Busca por nombre, autor...">
+        <a href="#" class="w3-bar-item w3-button w3-flat-amethyst">Buscar</a>
+      </div>
+    </nav>
+    <!--CONTENIDO-->
+    <main>
+      <button onclick="acordeon('acor1')" class="w3-button w3-block w3-black w3-left-align">Accordion</button>
+        <div id="acor1" class="w3-hide w3-animate-left">
+          <a href="#" class="w3-button w3-block w3-left-align">Link 1</a>
+          <a href="#" class="w3-button w3-block w3-left-align">Link 2</a>
+          <a href="#" class="w3-button w3-block w3-left-align">Link 3</a>
+        </div>
+        <button onclick="acordeon('acor2')" class="w3-button w3-block w3-black w3-left-align">Accordion</button>
+          <div id="acor2" class="w3-hide w3-animate-left">
+            <a href="#" class="w3-button w3-block w3-left-align">Link 1</a>
+            <a href="#" class="w3-button w3-block w3-left-align">Link 2</a>
+            <a href="#" class="w3-button w3-block w3-left-align">Link 3</a>
+          </div>
+          <button onclick="acordeon('acor3')" class="w3-button w3-block w3-black w3-left-align">Accordion</button>
+            <div id="acor3" class="w3-hide w3-animate-left">
+              <a href="#" class="w3-button w3-block w3-left-align">Link 1</a>
+              <a href="#" class="w3-button w3-block w3-left-align">Link 2</a>
+              <a href="#" class="w3-button w3-block w3-left-align">Link 3</a>
+            </div>
+    </main>
   </body>
 </html>
